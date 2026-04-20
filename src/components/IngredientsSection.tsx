@@ -9,10 +9,10 @@ const IngredientsSection = () => {
   const { data: cards } = useContentCards("ingredients");
 
   const fallback = [
-    { title: "Пептидный комплекс", description: "Биоактивные пептиды стимулируют обновление клеток и усиливают местный иммунитет слизистой оболочки", icon: "Dna" },
-    { title: "Гиалуроновая кислота", description: "Высокомолекулярная форма удерживает влагу, устраняет сухость и раздражение на длительный срок", icon: "Droplets" },
-    { title: "Изотонический раствор", description: "Физиологически совместимая основа бережно очищает полость носа без пересушивания", icon: "FlaskConical" },
-    { title: "Без консервантов", description: "Специальная упаковка обеспечивает стерильность без агрессивных химических добавок", icon: "PackageCheck" },
+    { title: "Тимические пептиды 0,01%", description: "Натуральные пептиды из тимуса крупного рогатого скота. Способствуют поддержанию местных защитных функций слизистой оболочки носа.", icon: "Dna" },
+    { title: "Гиалуроновая кислота", description: "Помогает удерживать влагу на поверхности слизистой и поддерживать ощущение комфорта в течение дня.", icon: "Droplets" },
+    { title: "Изотонический раствор", description: "Физиологически совместимая основа: бережно увлажняет слизистую без пересушивания.", icon: "FlaskConical" },
+    { title: "Понятный состав", description: "Без сосудосуживающих компонентов. Прозрачная формула для регулярного ухода за слизистой носа.", icon: "PackageCheck" },
   ];
 
   const items = cards && cards.length > 0 ? cards : fallback;
@@ -21,10 +21,10 @@ const IngredientsSection = () => {
     <section id="ingredients" className="py-20 md:py-28 section-gradient-primary">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
-          {content?.ingredients_title ?? "Состав"}
+          {content?.ingredients_title ?? "Что внутри флакона"}
         </h2>
         <p className="text-center text-muted-foreground mb-14 max-w-lg mx-auto">
-          {content?.ingredients_subtitle ?? "Клинически проверенные компоненты для безопасного ежедневного применения"}
+          {content?.ingredients_subtitle ?? "Два ключевых компонента и физиологичная основа — без сосудосуживающих веществ"}
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
@@ -50,8 +50,8 @@ const IngredientsSection = () => {
             <ShieldOff className="w-6 h-6 text-accent" />
           </div>
           <div>
-            <p className="font-semibold text-foreground">Без консервантов, красителей и парабенов</p>
-            <p className="text-sm text-muted-foreground">Безопасная формула подходит для ежедневного применения взрослыми и детьми</p>
+            <p className="font-semibold text-foreground">Без сосудосуживающих компонентов и красителей</p>
+            <p className="text-sm text-muted-foreground">Подходит для регулярного использования в рамках ежедневного ухода за слизистой носа.</p>
           </div>
         </div>
       </div>
