@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="italic ml-1">Лор</span>
             </span>
             <p className="text-background/60 text-sm mt-3 max-w-xs">
-              {content?.footer_description ?? "Назальный спрей с тимическими пептидами и гиалуроновой кислотой · 30 мл"}
+              {content?.footer_description ?? "Назальный спрей с тимическими пептидами 0,01% и гиалуроновой кислотой. Ежедневный уход за слизистой носа · 30 мл."}
             </p>
           </div>
 

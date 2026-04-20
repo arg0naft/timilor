@@ -17,7 +17,7 @@ const BuySection = () => {
           {content?.buy_title ?? "Где купить ТимиЛор"}
         </h2>
         <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-          {content?.buy_subtitle ?? "Выбирайте удобный формат покупки — аптеки, маркетплейсы и онлайн-каналы."}
+          {content?.buy_subtitle ?? "Выбирайте удобный формат: аптеки рядом с домом или доставка с маркетплейса. Один флакон — на 1–2 месяца ежедневного ухода."}
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
@@ -33,7 +33,7 @@ const BuySection = () => {
         </div>
 
         <p className="text-sm text-muted-foreground">
-          Средняя цена — около 390 ₽
+          От 390 ₽ за флакон 30 мл — около 1,8 ₽ за дозу ежедневного ухода
         </p>
       </div>
     </section>
